@@ -10,7 +10,7 @@ a{
     text-decoration: none;}
 body{
    font-family: 'Voces', sans-serif;
-   background-color: #DEB1B9;
+   background: url(https://fondosdepantallaymuchomas.files.wordpress.com/2012/02/21.jpg);
    font-size: 2rem;}
 nav {
         width: 100%;
@@ -20,16 +20,22 @@ nav {
         background-color: #ffffff;
         z-index: 99;
         font-family: 'Voces', sans-serif;
-        font-size: 2rem;}
+        font-size: 1.5rem;}
 .navbar{
     position: fixed;
     top: 0;
     width: 100%;
-    left: 0;}
-.navbar a:hover{
+    left: 0;
+    }
+.navbar a:hover,
+nav a.link{
    background-color: #DEB1B9;/**color al click a en navbar**/
+   border-radius: 20%;
    transition: ease-in .3s; /**tiempo de transición del color**/}
 
+   .section{
+    margin-top: 30px;
+   }
   .section__container {
     min-height: 100vh;
     max-width: 1200px;
@@ -135,7 +141,8 @@ ul li a {
 
 
 .container{
-    background-color: #F6E2F3;
+  background: linear-gradient(40deg, #F6E2F3, #d58bca);
+  border-radius: 2%;
 }
 
 #galeria .col-lg-4{ /*el # porque estoy llamando un id*/
@@ -144,8 +151,8 @@ ul li a {
 }
 
 #galeria img{
-    width: 100%;
-    height: 260px;
+    width: 50%;
+    max-width: 150px;
 }
 /*#galeria img:hover{aqui se crea una animacion para el color, resalta el borde
     border: 5px solid rgb(255, 75, 105);

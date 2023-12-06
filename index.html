@@ -5,24 +5,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Mi portafolio</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <!--css style-->
-     <link rel="stylesheet" href="./css/style.css">
-
-
+   <!--font awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--CSS Style-->
+   <link rel="stylesheet" href="./css/style.css">
+   
    </head>
  <body><!--inicia body-->
 <!--inicia navbar-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" style="background-color: black" id="navbar">
     <div class="nav_content">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
-          <a class="nav-link" href="#">Habilidades</a>
-          <a class="nav-link" href="#">Proyectos</a>
-          <a class="nav-link" href="#">Contáctame</a>
+          <a class="nav-link" href="#acercademi">Sobre mí</a>
+          <a class="nav-link" href="#galeria">Habilidades</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#contactame">Contáctame</a>
         </div>
       </div>
     </div>
@@ -31,7 +32,7 @@
 
 <section class="section"><!--inicia about me-->
     <div class="section__container">
-      <div class="content">
+      <div class="content" id="acercademi">
         <p class="subtitulo">Bienvenido, bienvenida</p>
         <h1 class="titulo">
           Mi nombre es <span>Ana Mia Castro Ruiz</span> y soy <span>Desarrolladora Web</span>
@@ -46,6 +47,7 @@
         <a  download href="./assets/Curriculum Ana Mia.pdf">
           <button class="portfolio">Descarga CV</button>
         </a>
+        
     </div>
       </div>
       <div class="image">
@@ -91,7 +93,7 @@
 </section><!--termina habilidades-->
 <br><hr>
 <!--inicia carrusel-->
-<div class="carrusel ">
+<div class="carrusel" id="proyectos">
     <h1 class="habil" style="text-align: center; color: #5E0D0D;">Mis proyectos</h1>
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
@@ -120,7 +122,7 @@
 </div><!--termina carrusel-->
 <br> <hr>
 <!--Inicia Contáctame-->
-<div class="grid-container2">
+<div class="grid-container2" id="contactame">
     <div class="container">
         <form><!--empieza el formulario-->
             <div class="fade show" role="alert" id="alertValidacionesTexto">
@@ -152,7 +154,7 @@
               </div>
         
             <button type="button" id="btnEnviar" class="btn btn-primary btn-lg btn-block">Enviar</button>
-            <br>
+
             <button type="button" id="btnLimpiar" class="btn btn-primary btn-lg btn-block">Limpiar</button>
         </form><!--termina el formulario-->
     </div> 
@@ -161,11 +163,19 @@
 <!--footer-->
 <footer class="footer" id = "footer">
          <h3>2023</h3> 
+          <!-- Iconos de redes sociales en el footer -->
+        <section class="buttons">
+          <a href="https://github.com/miaruizc" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anamiacastro/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        </section>
+      
 </footer>
 
-<script src="./js/main.js"></script>
+<!--<script src="./js/main.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
- </body>
+
+
+</body>
 
 </html>
